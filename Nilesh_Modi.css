@@ -758,6 +758,7 @@ div#experience {
   background-color: rgb(255 253 244);
   padding-top: 30px;
   margin-top: 70px;
+  padding-bottom: 70px;
 }
 
 .section-3 {
@@ -1214,3 +1215,182 @@ button#btn_experiencebutton_6 {
 }
 
 /* experience section end */
+
+
+/* education section start */
+
+#educationbody{
+  /* width: 100%; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.container_education .card_education {
+  position: relative;
+  margin-left: 9px;
+  margin-right: 9px;
+ 
+  border-style: none;
+}
+.container_education .card_education .face {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 220px;
+  transition: 0.5s;
+  border-radius: 12px;
+}
+.container_education .card_education .face.face1 {
+  position: relative;
+ 
+  background: linear-gradient(to right bottom,  rgba(0,32,96,1) 0%, rgba(90,19,104,1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.container_education .card_education:hover .face.face1 {
+  transform: translateY(0);
+  background-image: linear-gradient(to left bottom,  rgba(0,32,96,1) 0%, rgba(90,19,104,1));
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.container_education .card_education .face.face1 .content {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.container_education .card_education:hover .face.face1 .content {
+  opacity: 1;
+}
+
+
+
+.container_education .card_education .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.164);
+  transform: translateY(-100px);
+}
+.container_education .card_education:hover .face.face2 {
+  transform: translateY(0);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.container_education .card_education .face.face2 p {
+  margin: 0;
+  padding: 0;
+}
+.container_education .card_education .face.face2 a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+.container_education .card_education .face.face2 a:hover {
+  background: #333;
+  color: #fff;
+}
+
+i.fa-sharp-duotone.fa-solid.fa-graduation-cap {
+  color: wheat;
+  text-align: center;
+  width: 100%;
+}
+
+h3.education-h3s {
+  font-family: "poppins";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 0;
+  color: white;
+ 
+}
+
+
+
+p.education-p {
+  font-family: 'Poppins';
+  color: rgb(172, 168, 168);
+  font-size: 16px;
+  text-align: center;
+}
+
+ul.education-ul {
+  font-family: 'Poppins';
+  font-size: 13px;
+  color: gray;
+  /* letter-spacing: 0px; */
+}
+
+li.education-li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+div#education {
+  padding-top: 70px;
+}
+
+
+@media screen and (min-device-width: 991px) and (max-device-width: 1199px) {
+  #educationbody {
+    /* width: 100%; */
+    position: relative;
+    display: flex
+;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+}
+}
+
+
+
+
+@media screen and (min-device-width: 300px) and (max-device-width: 991px) {
+#educationbody {
+  /* width: 100%; */
+  position: relative;
+  display: flex
+;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+}
+
+
+@media screen and (min-device-width: 300px) and (max-device-width: 400px) {
+
+  ul.education-ul {
+    font-family: 'Poppins';
+    font-size: 10px;
+  
+  }
+        
+}
+
+/* education section end */
+
+
+/* achivement section start */
+
+
+
+/* achivement section end */
