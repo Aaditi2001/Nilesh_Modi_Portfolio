@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr.Nilesh_Modi_Portfolio</title>
+    <link rel="icon" href="assets/fevicon" type="image/x-icon" />
+    <link rel="stylesheet" href="Nilesh_Modi.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- font_link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- font_awesome_icon_link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container align-items-center justify-content-between">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dr. Nilesh Modi
+                        <p class="brand-p">
+                            An Academician - Researcher - eSecurity Expert
+                        </p>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Aboutme.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Awards and Recognition.html">Awards & Recognition</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="publication.html">Publications</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallary.html">Gallery</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactme.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- navbar end -->
+
+
+    <!-- Doctoral Theses start -->
+
+    <div class="container doctoralsection mb-5">
+
+        <section class="doctoral-section">
+
+
+
+
+            <div class="sec-skill">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h2 class="skill mb-0">Doctoral Theses</h2>
+                    <button class="see-more-btn" onclick="toggleTheses()">
+                        <span id="toggle-icon"></span> <span id="toggle-text">Show All</span>
+                    </button>
+
+                </div>
+
+                <p class="skill-para">
+                    Research contributions guided with a focus on innovation, technology, and academic excellence.
+                </p>
+            </div>
+
+
+
+            <div class="floating-thesis-list">
+
+                <!-- ✅ FIRST 3 ALWAYS VISIBLE -->
+                <div class="visible-theses">
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2024</div>
+                        <div class="card-content">
+                            <h4>📘 Modeling a Framework for Improving Performance on an Enterprise ERP</h4>
+                            <p><strong>Researcher:</strong> Hareshkumar Premshankar Raval</p>
+                            <p><strong>University:</strong> Dr. Babasaheb Ambedkar Open University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2023</div>
+                        <div class="card-content">
+                            <h4>📘 Comparative Study of ICT-based Exam Reforms in Gujarat Universities</h4>
+                            <p><strong>Researcher:</strong> Hareshkumar Arjanbhai Kher</p>
+                            <p><strong>University:</strong> Dr. Babasaheb Ambedkar Open University</p>
+                        </div>
+                    </div>
+
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2023</div>
+                        <div class="card-content">
+                            <h4>📘 Data Mining Techniques in GIS for Precision Agriculture</h4>
+                            <p><strong>Researcher:</strong> Tejas Satishbhai Mehta</p>
+                            <p><strong>University:</strong> Dr. Babasaheb Ambedkar Open University</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+                <!-- 🔽 HIDDEN CARDS (Revealed on Click) -->
+                <div class="extra-theses" id="moreTheses">
+
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2022</div>
+                        <div class="card-content">
+                            <h4>📘 Rogue Access Point Elimination in WLAN</h4>
+                            <p><strong>Researcher:</strong> Mitesh Girishbhai Patel</p>
+                            <p><strong>University:</strong> Mewar University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2022</div>
+                        <div class="card-content">
+                            <h4>📘 Smart Home & Smart Grid Implementation using LI-FI</h4>
+                            <p><strong>Researcher:</strong> Desai Pinak Nikhilesh</p>
+                            <p><strong>University:</strong> Kadi Sarva Vishwavidyalaya</p>
+                        </div>
+                    </div>
+
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2019</div>
+                        <div class="card-content">
+                            <h4>📘 Optimizing Routing Protocols for Wireless Sensor Networks</h4>
+                            <p><strong>Researcher:</strong> Raval Kameshkumar Rajendrakumar</p>
+                            <p><strong>University:</strong> Gujarat Technological University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2019</div>
+                        <div class="card-content">
+                            <h4>📘 Object Detection in Autonomous Defense Vehicle</h4>
+                            <p><strong>Researcher:</strong> Kaushal Jani</p>
+                            <p><strong>University:</strong> Kadi Sarva Vishwavidyalaya</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2016</div>
+                        <div class="card-content">
+                            <h4>📘 Secure Code Execution using Bad Login Mechanism</h4>
+                            <p><strong>Researcher:</strong> Sudhirkumar Jagadishbhai Patel</p>
+                            <p><strong>University:</strong> Mewar University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2016</div>
+                        <div class="card-content">
+                            <h4>📘 Mutual Authentication Algorithm for 3G Standards</h4>
+                            <p><strong>Researcher:</strong> Mishara Sandip Dipakbhai</p>
+                            <p><strong>University:</strong> Karpagam University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2015</div>
+                        <div class="card-content">
+                            <h4>📘 Fighting Cyber-Crime Using Global Info Assurance</h4>
+                            <p><strong>Researcher:</strong> Mistri Neha Dilipkumar</p>
+                            <p><strong>University:</strong> Karpagam University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2015</div>
+                        <div class="card-content">
+                            <h4>📘 Feature Selection for Multi-Relational Data Mining</h4>
+                            <p><strong>Researcher:</strong> Vaghela Vimalkumar Bhupatbhai</p>
+                            <p><strong>University:</strong> Karpagam University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2015</div>
+                        <div class="card-content">
+                            <h4>📘 Detection of Node Attacks in MANET Routing Protocols</h4>
+                            <p><strong>Researcher:</strong> Shah Vrutik Mahendrabhai</p>
+                            <p><strong>University:</strong> Karpagam University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2013</div>
+                        <div class="card-content">
+                            <h4>📘 Movement Detection & Face Recognition using FNN</h4>
+                            <p><strong>Researcher:</strong> Pandya Bhavik Hareshkumar</p>
+                            <p><strong>University:</strong> Kadi Sarva Vishwavidyalaya</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2013</div>
+                        <div class="card-content">
+                            <h4>📘 Genetic Algorithm to Enhance Student Performance</h4>
+                            <p><strong>Researcher:</strong> Mudaliar Devasenathipathi Natarajan</p>
+                            <p><strong>University:</strong> Bharathiar University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2013</div>
+                        <div class="card-content">
+                            <h4>📘 Study of Software Fault Tolerance Mechanisms</h4>
+                            <p><strong>Researcher:</strong> Prajapati Jigna Bhupendra</p>
+                            <p><strong>University:</strong> Shri JJT University</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-thesis-card">
+                        <div class="vertical-label">2013</div>
+                        <div class="card-content">
+                            <h4>📘 Efficient & Secure Data Transfer on Heterogeneous Network</h4>
+                            <p><strong>Researcher:</strong> Haidarali Khilafat Ansari</p>
+                            <p><strong>University:</strong> Kadi Sarva Vishwavidyalaya</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+    <!-- Doctoral Theses End -->
+
+    <!--   Research paper start -->
+
+
+
+    <div class="container reserhprojectsec mb-5">
+
+        <section class="research-projects">
+
+            <div class="sec-skill">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h2 class="skill mb-0">Research Projects</h2>
+
+                </div>
+
+                <p class="skill-para">
+                    Research contributions guided with a focus on innovation, technology, and academic excellence.
+                </p>
+            </div>
+
+            <div class="project-list">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h4>Modeling a Framework for Efficient and Secured Use of Networked Resources</h4>
+
+                    <div class="project-meta">
+                        <p><strong>Funding Agency:</strong> AICTE</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p><strong>Role:</strong> Principal Investigator</p>
+                        <p><strong>Amount:</strong> ₹9,00,000</p>
+                        <p><strong>Duration:</strong> 2013 – 2016</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h4>Smarten-Up the Computing Facility With Advanced Teaching Learning Aids</h4>
+
+                    <div class="project-meta">
+                        <p><strong>Funding Agency:</strong> AICTE</p>
+                        <p><strong>Status:</strong> Completed</p>
+                        <p><strong>Role:</strong> Principal Investigator</p>
+                        <p><strong>Amount:</strong> ₹9,87,000</p>
+                        <p><strong>Duration:</strong> 2013 – 2016</p>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+
+    <!-- Research paper end -->
+
+
+
+
+
+
+    <!-- research paper -->
+
+
+
+    <div class="container-fluid" id="Publication_section">
+        <div class="container">
+
+            <div class="sec-skill">
+                <div class="skill">Publication List</div>
+                <p class="skill-para">
+                    The roots of education are bitter, but the fruit is sweet
+                </p>
+            </div>
+
+
+         
+
+
+            <div class="reserchpapersection">
+
+                <div class="pub-buttons">
+                     <button id="btn-international" onclick="showPublications('international')">International Journal
+                        Publications</button>
+                    <button id="btn-national" class="active" onclick="showPublications('national')">National Journal
+                        Publications</button>
+                   
+                    <button id="btn-conference" onclick="showPublications('conference')">International Conference
+                        Publications</button>
+                </div>
+
+                <div class="publications-section">
+
+                    <!-- National Journal Publications -->
+                    <div id="national" class="publications-content active">
+                        <ul class="publication-list national-list">
+                            <li>
+                                <div class="publication-title">Improving Navigation and Visualization for User’s and
+                                    Search
+                                    Engine</div>
+                                <ul class="publication-details">
+                                    <li>Published in Journal of SCI-TECH Research, Kadi Sarva Vishwavidyalaya,
+                                        Gandhinagar
+                                    </li>
+                                    <li>January-June 2010, Vol.1 Number 1, Pg. 11-16</li>
+                                    <li>ISSN: 0974-9780</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Clustering using Visual Data Mining</div>
+                                <ul class="publication-details">
+                                    <li>National Journal of Computer Science and Technology, S V Academy for Research,
+                                        Innovation and Development (SV-ACRID)</li>
+                                    <li>Jan-June 2010, Vol. 2, Issue-1, Pg. 29-32</li>
+                                    <li>ISSN: 0975–2463</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Creating Web Unite of Web Communities and Derive
+                                    Astonishing
+                                    Information from Web Unite</div>
+                                <ul class="publication-details">
+                                    <li>National Journal of System and Information Technology, Shrimad Rajchandra
+                                        Institute
+                                        of Management and Computer Application, Bardoli</li>
+                                    <li>Dec 2009, Vol. 2 Number 2, Pg. 147-157</li>
+                                    <li>ISSN: 0974-3308</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Performance Evaluation of Audio Video Data Transfer in
+                                    802.11b WLAN Environment</div>
+                                <ul class="publication-details">
+                                    <li>National Journal of Computer Science and Technology, S V Academy for Research,
+                                        Innovation and Development (SV-ACRID)</li>
+                                    <li>July-December 2009, Vol. I, Issue-2, Pg. 5-8</li>
+                                    <li>ISSN: 0975–2463</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Planning and Implementation of Knowledge Grid in Indian
+                                    Context</div>
+                                <ul class="publication-details">
+                                    <li>National Journal of System and Information Technology, Shrimad Rajchandra
+                                        Institute
+                                        of Management and Computer Application, Bardoli</li>
+                                    <li>June 2009, Vol. I Number 3, Pg. 42-53</li>
+                                    <li>ISSN: 0974-3308</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Design and Implementation Issues of Wireless Sensor
+                                    Networks
+                                </div>
+                                <ul class="publication-details">
+                                    <li>National Journal of Computer Science and Technology, S V Academy for Research,
+                                        Innovation and Development (SV-ACRID)</li>
+                                    <li>Jan-June 2009, Vol. I, Issue-I, Pg. 37-41</li>
+                                    <li>ISSN: 0975–2463</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Security Issues in On-Demand Grid Computing</div>
+                                <ul class="publication-details">
+                                    <li>National Journal of Computer Science and Technology, S V Academy for Research,
+                                        Innovation and Development (SV-ACRID)</li>
+                                    <li>Jan-June 2009, Vol. I, Issue-I, Pg. 11-19</li>
+                                    <li>ISSN: 0975–2463</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Implementation and Security Issues in ATM Networks</div>
+                                <ul class="publication-details">
+                                    <li>Anart - The Journal of Hemchandracharya North Gujarat University</li>
+                                    <li>Vol. II, 2005 (Published June 2006)</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- International Journal Publications -->
+                    <div id="international" class="publications-content">
+                        <ul class="publication-list international-list">
+                            <li>
+                                <div class="publication-title">Enhancing Collaborative Learning Using Context-Aware
+                                    Services in Smart Classrooms</div>
+                                <ul class="publication-details">
+                                    <li>International Journal of Innovative Technology and Exploring Engineering
+                                        (IJITEE)</li>
+                                    <li>Volume 8, Issue 6S4, April 2019/li>
+                                    <li>Volume 8, Issue 6S4, April 2019</li>
+                                </ul>
+
+                                <div class="seepaper"><a href="" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <!-- International Conference Publications -->
+                    <div id="conference" class="publications-content">
+                        <ul class="publication-list conference-list">
+                            <li>
+                                <div class="publication-title">Unraveling Travelling Salesman Problem by Genetic
+                                    Algorithm
+                                    using m-Crossover Operator</div>
+                                <ul class="publication-details">
+                                    <li>Presented and published in International Conference on Signal Processing Image
+                                        Processing & Pattern Recognition (ICSIPR)</li>
+                                    <li>7-8 Feb. 2013, Department of Electronics and Communication Engineering, Karunya
+                                        University, Coimbatore</li>
+                                    <li>Print ISBN: 978-1-4673-4861-4</li>
+                                </ul>
+
+                                <div class="seepaper"><a href="" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+                            <li>
+                                <div class="publication-title">Civilizing performance in DSR based ARIADNE protocol in
+                                    existence of route modification attack</div>
+                                <ul class="publication-details">
+                                    <li>International Conference on Networks, Intelligence and Computing Technologies
+                                        (ICNICT-2011)</li>
+                                    <li>December 15 - 16, 2011, Karpagam University, Coimbatore</li>
+                                    <li>ISBN: 978-81-8424-742-8</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Image Processing for Face Recognition using Fuzzy Neural
+                                    Network</div>
+                                <ul class="publication-details">
+                                    <li>International Conference on Innovative Science & Engineering Technology
+                                        (ICISET-2011)</li>
+                                    <li>April 8 - 9, 2011, VVP Engineering College, Rajkot, India</li>
+                                    <li>ISBN 978-81-906377-5-6</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Efficient Handover among WiMAX and WiFi</div>
+                                <ul class="publication-details">
+                                    <li>2nd International Conference on Computer and Network Technology (ICCNT 2010)
+                                    </li>
+                                    <li>April 23 - 25, 2010, Bangkok, Thailand</li>
+                                    <li>ISBN: 978-0-7695-4042-9</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Monitoring Web Usage Using Fuzzy Pattern Matching</div>
+                                <ul class="publication-details">
+                                    <li>International Conference on Managing Next Generation Software Applications</li>
+                                    <li>December 5-6, 2008, Karunya University, Karunya Nagar, Coimbatore</li>
+                                    <li>ISBN No. 978-81-907870-0-0</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Tracking the Growth of Web Usage Patterns Using Visual
+                                    Data
+                                    Mining</div>
+                                <ul class="publication-details">
+                                    <li>International Conference on Web Intelligent System – ICWIS09</li>
+                                    <li>January 8-10, 2009, Rajalakshmi Engineering College, Chennai, Tamilnadu</li>
+                                    <li>ISBN No. 978-81-8487-013-8</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Trust based security issues in Grid and Cluster Computing
+                                </div>
+                                <ul class="publication-details">
+                                    <li>2nd International Conference on Globalization: Opportunities and Challenges
+                                        IBSA.ICON07</li>
+                                    <li>December 27-29, 2007, ICFAI Business School, Ahmedabad</li>
+                                    <li>Published in Globalization: Opportunities and Challenges, Wisdom Publications;
+                                        2008
+                                    </li>
+                                    <li>ISBN: 81-89547-39-9</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Application of Information Technology to improve the
+                                    efficiency of Lighthouses on Indian Coast</div>
+                                <ul class="publication-details">
+                                    <li>International Conference on Information Systems, Technology and Management,
+                                        ICISTM
+                                        2007</li>
+                                    <li>March 12-13, 2007, Institute of Management & Technology, Ghaziabad, U.P. and
+                                        University of California, USA</li>
+                                    <li>Published by Allied Publishers Pvt.Ltd</li>
+                                    <li>ISBN No. 81-8424-182-8</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Natural Language Requirements for the Executable Models
+                                    of
+                                    Software Components</div>
+                                <ul class="publication-details">
+                                    <li>3rd International Conference on Multilingual Computing and Information
+                                        Management,
+                                        CALIBER – 2005</li>
+                                    <li>February 2-4, 2005, Cochin University of Science & Technology, Cochin, Kerala
+                                    </li>
+                                    <li>Organized by University Grant Commission, New Delhi and Inflibnet Center,
+                                        Ahmedabad
+                                    </li>
+                                    <li>ISBN No. 81-902079-0-3</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Current Status & Process in the development of
+                                    Application
+                                    through NLP</div>
+                                <ul class="publication-details">
+                                    <li>3rd International Conference CALIBER – 2005</li>
+                                    <li>February 2-4, 2005, Cochin University of Science & Technology, Cochin, Kerala
+                                    </li>
+                                    <li>Organized by University Grant Commission, New Delhi and Inflibnet Center,
+                                        Ahmedabad
+                                    </li>
+                                    <li>ISBN No. 81-902079-0-3</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Security Policy</div>
+                                <ul class="publication-details">
+                                    <li>International Conference on Emerging Technologies ICET-2004</li>
+                                    <li>December 21-24, 2004, Indian Institute of Technology, Kanpur, and Kalinga
+                                        Institute
+                                        of Industrial Technology, Bhubaneswar</li>
+                                    <li>Organized with AICTE, Ministry of HRD, and CSIR, New Delhi</li>
+                                    <li>ISBN No. 81-7764-726-1</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                            <li>
+                                <div class="publication-title">Implementation of Reliable Multicast Transport Protocol
+                                </div>
+                                <ul class="publication-details">
+                                    <li>International Conference on Emerging Technologies ICET-2004</li>
+                                    <li>December 21-24, 2004, Indian Institute of Technology, Kanpur, and Kalinga
+                                        Institute
+                                        of Industrial Technology, Bhubaneswar</li>
+                                    <li>Organized with AICTE, Ministry of HRD, and CSIR, New Delhi</li>
+                                    <li>ISBN No. 81-7764-726-1</li>
+                                </ul>
+                                <div class="seepaper"><a href="#" class="publication-link" target="_blank"
+                                        rel="noopener noreferrer">Read
+                                        Paper</a></div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- research paper -->
+
+
+    <!-- footer -->
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by
+                            <a href="#"><b>Nilesh Modi</b></a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="github" href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+
+    
+
+
+    <!-- research paper codepen -->
+
+    <script>
+        function showPublications(sectionId) {
+            const sections = document.querySelectorAll('.publications-content');
+            const buttons = document.querySelectorAll('.pub-buttons button');
+
+            sections.forEach(sec => {
+                sec.classList.remove('active');
+                if (sec.id === sectionId) sec.classList.add('active');
+            });
+
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            document.getElementById('btn-' + sectionId).classList.add('active');
+        }
+    </script>
+
+
+
+
+
+
+    <!-- js for Doctoral Theses -->
+    <script>
+        function toggleTheses() {
+            const more = document.getElementById("moreTheses");
+            const icon = document.getElementById("toggle-icon");
+            const text = document.getElementById("toggle-text");
+
+            if (more.style.display === "none" || more.style.display === "") {
+                more.style.display = "flex"; // ✔️ this enables gap
+
+                text.textContent = "Show Less";
+            } else {
+                more.style.display = "none";
+
+                text.textContent = "Show All";
+            }
+        }
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
